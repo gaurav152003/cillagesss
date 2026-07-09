@@ -14,10 +14,10 @@ export default function Navbar() {
       <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl">
         {/* Logo */}
         <div className="flex flex-col items-center">
-          <a href="/">
+          <Link to="/">
             {" "}
             <img src={logo} alt="logo" className="h-10 object-contain" />
-          </a>
+          </Link>
 
           <a href="/">
             {" "}
@@ -29,10 +29,10 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-8 text-black">
           <li className="cursor-pointer hover:text-blue-400 transition">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="cursor-pointer hover:text-blue-400 transition">
-            <a href="/about"> About us</a>
+            <Link to="/about">About Us</Link>
           </li>
           {/* Services */}
           <li className="relative group">
@@ -193,16 +193,16 @@ export default function Navbar() {
 
           {/* Clients */}
           <li className="cursor-pointer hover:text-blue-400 transition">
-            <a href="/project">Projects</a>
+            <Link to="/project">Projects</Link>
           </li>
 
           <li className="cursor-pointer hover:text-blue-400 transition">
-            <a href="/contact">Contact us</a>
+            <Link to="/contact">Contact</Link>
           </li>
 
           <li>
-            <a
-              href="/cillages-one"
+            <Link
+              to="/cillages-one"
               className="group relative flex items-center rounded-full border border-blue-500/30 bg-black px-5 py-2 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               {/* NEW Badge */}
@@ -223,7 +223,7 @@ export default function Navbar() {
                   </span>
                 </p>
               </div>
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -249,11 +249,11 @@ export default function Navbar() {
           >
             <div className="flex flex-col py-3 text-black">
               <button className="px-6 py-4 text-left hover:bg-white/5 transition">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </button>
 
               <button className="px-6 py-4 text-left hover:bg-white/5 transition">
-                <a href="/about"> About Us</a>
+                <Link to="/about"> About Us</Link>
               </button>
               {/* Services */}
               <div>
@@ -399,11 +399,11 @@ export default function Navbar() {
 
               {/* Clients & Consultants */}
               <button className="px-6 py-4 text-left hover:bg-white/5 transition">
-                <a href="/project">Projects</a>
+                <Link to="/project">Projects</Link>
               </button>
 
               <button className="px-6 py-4 text-left hover:bg-white/5 transition">
-                <a href="/contact">Contact</a>
+                <Link to="/contact">Contact</Link>
               </button>
               <Link
                 to="/cillages-one"
