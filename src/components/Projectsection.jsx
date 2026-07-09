@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/Projectcard.jsx";
 
 import project1 from "../assets/township.jpg";
 import project2 from "../assets/neptune.jpg";
