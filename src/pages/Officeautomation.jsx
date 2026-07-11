@@ -107,9 +107,9 @@ function Officeautomation() {
               </span> */}
 
               <h1 className="mt-8 text-4xl font-bold leading-tight text-white md:text-6xl">
-                Smarter Offices.
+                Smarter Workplaces.
                 <br />
-                <span className="text-cyan-400">Connected Workspaces.</span>
+                <span className="text-cyan-400">Connected Experiences.</span>
               </h1>
 
               <p className="mt-5 sm:mt-8 max-w-2xl text-sm sm:text-lg leading-8 text-gray-200">
@@ -162,16 +162,14 @@ function Officeautomation() {
           {/* Heading */}
 
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-cyan-50 px-5 py-2 text-sm font-semibold uppercase tracking-[4px] text-cyan-600">
-              Smart Office Solutions
-            </span>
-
+            <span className="inline-flex rounded-full bg-blue-500 px-5 py-2 text-sm font-semibold uppercase tracking-[4px] text-white">
+              {" "}
+              Smart Office Solutions{" "}
+            </span>{" "}
             <h2 className="mt-6 text-5xl font-bold text-gray-900">
-              Intelligent Workspaces
-              <br />
-              Built for Productivity
+              {" "}
+              Intelligent Workspaces <br /> Built for Productivity{" "}
             </h2>
-
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Cillages One transforms traditional offices into intelligent,
               connected workspaces by integrating automation, security,

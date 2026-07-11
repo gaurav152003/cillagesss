@@ -60,10 +60,11 @@ export default function HeroCarousel() {
       modules={[Autoplay, EffectFade, Pagination]}
       effect="fade"
       loop
-      speed={1200}
+      speed={600}
       autoplay={{
-        delay: 5000,
+        delay: 12000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       }}
       pagination={{ clickable: true }}
       className="w-full h-screen"
@@ -79,12 +80,12 @@ export default function HeroCarousel() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/5" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-black/5" />
 
             {/* Content */}
             <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-6 sm:px-8 md:px-12 lg:px-20">
               <div className="w-full max-w-3xl">
-                <span className="inline-block rounded-full border border-blue-500/30 bg-white/90 px-4 py-2 text-[11px] font-bold uppercase tracking-[4px] text-blue-900  sm:text-lg">
+                <span className="inline-block rounded-full border-2 border-blue-900 bg-white/90 px-4 py-2 text-[11px] font-bold uppercase tracking-[4px] text-blue-900  sm:text-lg">
                   {slide.subtitle}
                 </span>
 
@@ -92,7 +93,7 @@ export default function HeroCarousel() {
                   {slide.title}
                 </h1>
 
-                <p className="mt-6 max-w-2xl text-sm leading-7 text-gray-200 sm:text-base md:text-lg lg:text-xl lg:leading-9">
+                <p className="mt-6 max-w-2xl text-sm leading-7 font-semibold text-gray-200 sm:text-base md:text-lg lg:text-xl lg:leading-9">
                   {slide.description}
                 </p>
 

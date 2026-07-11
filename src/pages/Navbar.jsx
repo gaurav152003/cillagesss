@@ -11,7 +11,7 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
   return (
     <motion.nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[95%] z-50">
-      <div className="bg-white/10 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl">
+      <div className="bg-white/60 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl">
         {/* Logo */}
         <div className="flex flex-col items-center">
           <Link to="/">
@@ -106,7 +106,7 @@ export default function Navbar() {
       rounded-xl
       text-black
       hover:bg-blue-500/10
-      hover:text-blue-400
+      hover:text-blue-500
       transition-all
       duration-200
     "
@@ -180,7 +180,7 @@ export default function Navbar() {
       rounded-xl
       text-black
       hover:bg-blue-500/10
-      hover:text-blue-400
+      hover:text-blue-500
       transition-all
       duration-200
     "
@@ -195,7 +195,9 @@ export default function Navbar() {
           <li className="cursor-pointer hover:text-blue-400 transition">
             <Link to="/project">Projects</Link>
           </li>
-
+          <li className="cursor-pointer hover:text-blue-400 transition">
+            <Link to="/clients">Clients</Link>
+          </li>
           <li className="cursor-pointer hover:text-blue-400 transition">
             <Link to="/contact">Contact</Link>
           </li>
@@ -203,24 +205,47 @@ export default function Navbar() {
           <li>
             <Link
               to="/cillages-one"
-              className="group relative flex items-center rounded-full border border-blue-500/30 bg-black px-5 py-2 backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
+              className="
+      group
+      relative
+      overflow-hidden
+      flex
+      items-center
+      rounded
+      border
+      border-blue-300/40
+      bg-gradient-to-r
+      from-blue-700/95
+      via-blue-600
+      to-blue-500
+      px-4
+      py-2
+      backdrop-blur-2xl
+      shadow-[0_10px_40px_rgba(37,99,235,0.45)]
+      transition-all
+      duration-300
+      hover:scale-105
+      hover:shadow-[0_20px_60px_rgba(37,99,235,0.65)]
+      hover:border-white/40
+    "
             >
+              {/* Shine Effect */}
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-full transition-transform duration-1000" />
+
               {/* NEW Badge */}
-              <span className="absolute -top-2 -right-2 rounded-full bg-black px-2 py-0.5 text-[10px] font-bold uppercase text-white">
+              {/* <span className="absolute -top-2 -right-2 rounded-full bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700 shadow-lg">
                 NEW
-              </span>
+              </span> */}
 
-              <div>
-                <p className="text-sm font-semibold text-[#FFD700]   ">
+              <div className="relative z-10">
+                {/* Main Title */}
+                <h3 className="text-xl font-extrabold tracking-wide text-white drop-shadow-lg">
                   Cillages One
-                </p>
+                </h3>
 
-                <p className="text-[10px] text-gray-200 leading-none mt-1">
-                  Connecting Every Process
-                  <span className="text-[10px] text-gray-200 leading-none">
-                    {" "}
-                    Automating Every Workflow
-                  </span>
+                {/* Tagline */}
+                <p className="mt-1 whitespace-nowrap text-[12px] font-medium text-blue-100">
+                  Connecting Every Process • Automating Every Workflow
                 </p>
               </div>
             </Link>
@@ -248,11 +273,17 @@ export default function Navbar() {
             className="lg:hidden mt-4 overflow-hidden rounded border border-black/10 bg-white/10 backdrop-blur-xl shadow-2xl"
           >
             <div className="flex flex-col py-3 text-black">
-              <button className="px-6 py-4 text-left hover:bg-white/5 transition">
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="px-6 py-4 text-left hover:bg-white/5 transition"
+              >
                 <Link to="/">Home</Link>
               </button>
 
-              <button className="px-6 py-4 text-left hover:bg-white/5 transition">
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="px-6 py-4 text-left hover:bg-white/5 transition"
+              >
                 <Link to="/about"> About Us</Link>
               </button>
               {/* Services */}
@@ -351,7 +382,7 @@ export default function Navbar() {
                 <AnimatePresence>
                   {openDropdown === "automation" && (
                     <motion.div
-                      onClick={() => setMobileOpen(!mobileOpen)}
+                      onClick={() => setMobileOpen(false)}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
@@ -398,14 +429,26 @@ export default function Navbar() {
               </div>
 
               {/* Clients & Consultants */}
-              <button className="px-6 py-4 text-left hover:bg-white/5 transition">
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="px-6 py-4 text-left hover:bg-white/5 transition"
+              >
                 <Link to="/project">Projects</Link>
               </button>
-
-              <button className="px-6 py-4 text-left hover:bg-white/5 transition">
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="px-6 py-4 text-left hover:bg-white/5 transition"
+              >
+                <Link to="/clients">Clients</Link>
+              </button>
+              <button
+                onClick={() => setMobileOpen(false)}
+                className="px-6 py-4 text-left hover:bg-white/5 transition"
+              >
                 <Link to="/contact">Contact</Link>
               </button>
               <Link
+                onClick={() => setMobileOpen(false)}
                 to="/cillages-one"
                 className="relative mx-4 mt-4 flex rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 p-4 shadow-lg transition-all duration-300 hover:scale-[1.02]"
               >

@@ -107,7 +107,7 @@ function Homeautomation() {
               <h1 className="mt-6 text-4xl font-bold leading-tight text-white md:text-7xl">
                 Experience the
                 <br />
-                <span className="text-cyan-400">Future of Smart Living</span>
+                <span className="text-cyan-400">Future of Smart Spaces</span>
               </h1>
 
               <p className="mt-8 max-w-2xl text-sm sm:text-lg leading-8 text-gray-200">

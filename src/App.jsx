@@ -16,6 +16,7 @@ import Homeautomation from "./pages/Homeautomation";
 import Officeautomation from "./pages/Officeautomation";
 import Hospitalityautomation from "./pages/Hospitalityautomation";
 import Cillaegesone from "./pages/Cillaegesone";
+import Clients from "./pages/Clients";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about" element={<Aboutus />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/client" element={<Client />} />
+        <Route path="/clients" element={<Clients />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/development-solution" element={<DevelopmentSolution />} />
         <Route path="/project-management" element={<ProjectManagement />} />

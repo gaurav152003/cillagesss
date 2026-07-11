@@ -25,7 +25,7 @@ function Aboutus() {
           <div className="max-w-7xl mx-auto w-full px-6">
             <div className="max-w-3xl">
               {/* Badge */}
-              <span className="inline-flex items-center rounded-full border border-blue-500/40 bg-white px-5 py-1 text-sm font-semibold uppercase tracking-[3px] text-blue-500 backdrop-blur-md">
+              <span className="inline-flex items-center rounded-full border border-blue-500 bg-blue-500 px-5 py-1 text-sm font-semibold uppercase tracking-[3px] text-white backdrop-blur-md">
                 Since 1993
               </span>
 

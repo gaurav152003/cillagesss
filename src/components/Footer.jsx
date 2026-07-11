@@ -1,17 +1,40 @@
 import { Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "../assets/Cillages_Logo.png";
-
+import { Link } from "react-router-dom";
 const services = [
-  "Client Representation",
-  "Development Solution",
-  "Project Management",
-  "Cost Consultancy & QA",
-  "Allied Services",
-  "Home Automation",
-  "Office Automation",
-  "Hospitality Automation",
-  "Project Automation",
+  {
+    name: "Client Representation",
+    link: "/client",
+  },
+  {
+    name: "Development Solution",
+    link: "/development-solution",
+  },
+  {
+    name: "Project Management",
+    link: "/project-management",
+  },
+  {
+    name: "Cost Consultancy & QA",
+    link: "/cost-consultancy",
+  },
+  {
+    name: "Allied Services",
+    link: "/allied-services",
+  },
+  {
+    name: "Home Automation",
+    link: "/home-automation",
+  },
+  {
+    name: "Office Automaiton",
+    link: "/office-automation",
+  },
+  {
+    name: "Hospitality Automation",
+    link: "/hospitality-automation",
+  },
 ];
 
 export default function Footer() {
@@ -42,19 +65,18 @@ export default function Footer() {
 
             <ul className="space-y-4">
               {services.map((item) => (
-                <li key={item}>
-                  <a
-                    href="#"
-                    className="group flex items-center gap-2 text-sm text-gray-400 transition hover:text-cyan-400"
-                  >
-                    {item}
+                <Link
+                  key={item.name}
+                  to={item.link}
+                  className="group flex items-center gap-2 text-sm text-gray-400 transition hover:text-blue-500"
+                >
+                  {item.name}
 
-                    <ArrowUpRight
-                      size={15}
-                      className="opacity-0 transition group-hover:opacity-100"
-                    />
-                  </a>
-                </li>
+                  <ArrowUpRight
+                    size={15}
+                    className="opacity-0 transition group-hover:opacity-100"
+                  />
+                </Link>
               ))}
             </ul>
           </div>
@@ -133,9 +155,13 @@ export default function Footer() {
 
           {/* Logo */}
           <div className="flex flex-col  lg:items-end">
-            <img src={logo} alt="Cillages" className="mb-5 w-44" />
+            <img
+              src={logo}
+              alt="Cillages"
+              className="mb-5 w-45 bg-white p-2 rounded  "
+            />
 
-            <p className="max-w-xs text-center text-gray-400">
+            <p className="max-w-xs text-left sm:text-right text-gray-400">
               Delivering Excellence in Every Project Since 1993.
             </p>
           </div>

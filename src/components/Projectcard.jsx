@@ -13,17 +13,31 @@ export default function ProjectCard({ project }) {
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent transition-all duration-500 group-hover:from-black/90" />
 
-      {/* Bottom Content */}
-      <div className="absolute bottom-0 left-0 w-full p-8 z-10">
+      {/* Content */}
+      <div className="absolute bottom-0 left-0 z-10 w-full p-8">
         <span className="text-xs font-semibold uppercase tracking-[3px] text-orange-400">
           {project.type}
         </span>
 
         <h3 className="mt-2 text-3xl font-bold text-white">{project.title}</h3>
 
-        {/* Description */}
+        {/* Mobile: Always Visible */}
+        <div className="mt-4 md:hidden">
+          <p className="text-sm leading-6 text-gray-200">
+            {project.description}
+          </p>
+
+          {/* <button className="mt-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white backdrop-blur-md">
+            View Project
+            <ArrowUpRight size={16} />
+          </button> */}
+        </div>
+
+        {/* Desktop: Visible on Hover */}
         <div
           className="
+            hidden
+            md:block
             overflow-hidden
             max-h-0
             opacity-0
@@ -31,13 +45,17 @@ export default function ProjectCard({ project }) {
             duration-500
             group-hover:max-h-40
             group-hover:opacity-100
-            mt-0
             group-hover:mt-4
           "
         >
           <p className="text-sm leading-6 text-gray-200">
             {project.description}
           </p>
+
+          {/* <button className="mt-4 inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm text-white backdrop-blur-md">
+            View Project
+            <ArrowUpRight size={16} />
+          </button> */}
         </div>
       </div>
     </div>

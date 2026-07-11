@@ -46,7 +46,9 @@ function Cillaegesone() {
               <h2 className="mt-6 text-5xl font-bold leading-tight text-gray-900">
                 Intelligent
                 <br />
-                <span className="text-cyan-600">SaaS & Automation</span>
+                <span className="text-cyan-600">
+                  Township Management System
+                </span>
               </h2>
 
               <p className="mt-8 text-lg leading-8 text-gray-600">
