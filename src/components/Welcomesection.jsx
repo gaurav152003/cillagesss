@@ -74,7 +74,7 @@ export default function WelcomeSection() {
               controls
               className="w-full rounded-3xl shadow-2xl"
             />
-            <a>video will be update after creating</a>
+            <a>video will be update after creating video and ppt of ucc</a>
           </div>
         </div>
       </div>
