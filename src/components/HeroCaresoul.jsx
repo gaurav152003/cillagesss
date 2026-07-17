@@ -80,7 +80,7 @@ export default function HeroCarousel() {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-black/5" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/25 to-black/5" />
 
             {/* Content */}
             <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl items-center px-6 sm:px-8 md:px-12 lg:px-20">
@@ -93,7 +93,7 @@ export default function HeroCarousel() {
                   {slide.title}
                 </h1>
 
-                <p className="mt-6 max-w-2xl text-sm leading-7 font-semibold text-gray-200 sm:text-base md:text-lg lg:text-xl lg:leading-9">
+                <p className="desc-font mt-6 max-w-2xl text-sm leading-7 font-semibold text-gray-100 sm:text-base md:text-lg lg:text-xl lg:leading-9">
                   {slide.description}
                 </p>
 

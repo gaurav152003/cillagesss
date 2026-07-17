@@ -51,8 +51,8 @@ function Cillaegesone() {
                 </span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
-                Cillages One combines intelligent SaaS platforms with smart
+              <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
+                Cillages One combines an intelligent digital platform with smart
                 automation solutions to simplify operations, improve efficiency,
                 and create connected digital experiences across residential,
                 commercial, and hospitality environments.
@@ -62,7 +62,7 @@ function Cillaegesone() {
 
               <div className="mt-10 grid grid-cols-2 gap-5">
                 {[
-                  "SaaS Platform",
+                  "Digital Platform",
                   "Smart Automation",
                   "Real-Time Monitoring",
                   "Facility Management",
@@ -72,7 +72,9 @@ function Cillaegesone() {
                   <div key={item} className="flex items-center gap-3">
                     <CheckCircle2 size={18} className="text-cyan-600" />
 
-                    <span className="font-medium text-gray-700">{item}</span>
+                    <span className="font-medium text-gray-700 desc-font">
+                      {item}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -114,7 +116,7 @@ function Cillaegesone() {
               {/* View Presentation */}
 
               <a
-                href="/pdf/cillagesone.pdf"
+                href="/pdf/cillages.profile.2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-cyan-700"
@@ -139,7 +141,7 @@ function Cillaegesone() {
               For Every Environment
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               From modern homes to corporate offices and hospitality spaces,
               Cillages One delivers intelligent automation solutions designed to
               improve comfort, efficiency, security, and operational excellence.
@@ -160,7 +162,7 @@ function Cillaegesone() {
                   {item.title}
                 </h3>
 
-                <p className="mt-5 leading-8 text-gray-600">
+                <p className="mt-5 leading-8 text-gray-600 desc-font">
                   {item.description}
                 </p>
 
@@ -192,7 +194,7 @@ function Cillaegesone() {
             Smarter Digital Experiences?
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100 desc-font">
             Whether you're looking for an intelligent SaaS platform or smart
             automation solutions, Cillages One helps transform the way you
             manage, monitor, and automate your spaces with innovative
@@ -209,7 +211,7 @@ function Cillaegesone() {
             </Link>
 
             <a
-              href="/pdf/Cillages-One-Presentation.pdf"
+              href="/pdf/cillages.profile.2026.pdf"
               download
               className="inline-flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-cyan-700"
             >

@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
             Engineering Excellence Powering Smarter Futures
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-black">
+          <p className="mt-6 text-lg leading-8 text-black desc-font">
             Since 1993, Cillages has combined engineering excellence, project
             management expertise, and digital innovation to deliver successful
             developments. Today, through Cillages One, we extend our
@@ -92,7 +92,9 @@ export default function WhyChooseUs() {
               </h3>
 
               {/* Description */}
-              <p className="mt-4 leading-7 text-gray-400">{item.desc}</p>
+              <p className="mt-4 leading-7 text-gray-400 desc-font">
+                {item.desc}
+              </p>
 
               {/* Footer */}
               {/* <div className="mt-8 flex items-center justify-between border-t border-zinc-800 pt-6">

@@ -141,7 +141,7 @@ function ProjectManagement() {
                 </span>
               </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200">
+              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200 desc-font">
                 Combining international project management practices, Agile
                 methodologies, engineering expertise, and digital innovation to
                 successfully deliver complex developments across India.
@@ -170,21 +170,21 @@ function ProjectManagement() {
                 <span className="text-blue-600">Beyond Expectations</span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
+              <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
                 Cillages has an established history of professionally managing
                 projects with minimal deviations while ensuring transparency,
                 efficiency, and complete stakeholder satisfaction throughout the
                 project lifecycle.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 Every engagement begins with a detailed stakeholder analysis,
                 allowing us to understand business objectives, identify project
                 priorities, and deliver customized project management solutions
                 tailored to each client's specific requirements.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 By integrating engineering expertise, Agile project management,
                 digital capabilities, and sustainable practices, Cillages
                 consistently delivers successful residential, commercial,
@@ -201,7 +201,7 @@ function ProjectManagement() {
               Project Management Capabilities
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Combining technical expertise, structured methodologies, and
               stakeholder-focused execution, we ensure projects are delivered on
               time, within budget, and to the highest quality standards.
@@ -222,7 +222,9 @@ function ProjectManagement() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{item.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -235,7 +237,7 @@ function ProjectManagement() {
               Our Project Management Process
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Every project follows a structured methodology that combines
               engineering excellence, stakeholder collaboration, and continuous
               monitoring to ensure predictable and successful outcomes.
@@ -262,7 +264,9 @@ function ProjectManagement() {
                       {step.title}
                     </h3>
 
-                    <p className="mt-4 leading-7 text-gray-600">{step.desc}</p>
+                    <p className="mt-4 leading-7 text-gray-600 desc-font">
+                      {step.desc}
+                    </p>
                   </div>
 
                   <div className="hidden lg:flex h-6 w-6 items-center justify-center rounded-full border-4 border-white bg-blue-600 shadow-lg"></div>
@@ -283,7 +287,7 @@ function ProjectManagement() {
               Sustainable Project Management
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-300">
+            <p className="mt-6 text-lg leading-8 text-slate-300 desc-font">
               Cillages integrates sustainability into every project by combining
               engineering excellence with ESG compliance, carbon footprint
               monitoring, and environmentally responsible construction
@@ -305,7 +309,9 @@ function ProjectManagement() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-slate-300">{item.desc}</p>
+                <p className="mt-4 leading-7 text-slate-300 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -327,7 +333,7 @@ function ProjectManagement() {
             With Excellence Since 1993
           </h2>
 
-          <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-blue-100">
+          <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-blue-100 desc-font">
             Whether you're developing residential communities, commercial
             buildings, industrial facilities, infrastructure, or redevelopment
             projects, Cillages delivers complete project management solutions

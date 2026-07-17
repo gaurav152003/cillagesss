@@ -40,7 +40,7 @@ function Aboutus() {
               </h1>
 
               {/* Description */}
-              <p className="mt-8 text-lg md:text-xl leading-9 text-gray-200">
+              <p className="mt-8 text-lg md:text-xl leading-9 text-gray-200 desc-font">
                 Cillages is a client-focused Project Management Consultancy
                 delivering industrial, commercial, infrastructure, residential,
                 and public sector developments across India.
@@ -63,7 +63,7 @@ function Aboutus() {
                 Delivering Excellence Since 1993
               </h2>
 
-              <p className="text-gray-700 mt-8 leading-8 text-lg">
+              <p className="text-gray-700 mt-8 leading-8 text-lg desc-font">
                 Established in 1993, Cillages is a client business
                 objective-focused Project Management Consultancy with over 30
                 years of experience delivering complex industrial, commercial,
@@ -71,7 +71,7 @@ function Aboutus() {
                 development projects across India.
               </p>
 
-              <p className="text-gray-700 mt-6 leading-8 text-lg">
+              <p className="text-gray-700 mt-6 leading-8 text-lg desc-font">
                 By combining internationally accepted Project Management
                 practices, Agile methodologies, engineering expertise, and
                 proprietary digital capabilities through the C2M platform,
@@ -80,7 +80,7 @@ function Aboutus() {
                 stakeholder collaboration.
               </p>
 
-              <p className="text-gray-700 mt-6 leading-8 text-lg">
+              <p className="text-gray-700 mt-6 leading-8 text-lg desc-font">
                 Today, Cillages continues to evolve by integrating Artificial
                 Intelligence, Smart Automation, Digital Infrastructure, and
                 connected technologies into its consulting services—helping
@@ -119,7 +119,7 @@ function Aboutus() {
             <div>
               <h2 className="text-4xl font-bold text-white">Our Philosophy</h2>
 
-              <p className="text-gray-400 mt-6 leading-8">
+              <p className="text-gray-400 mt-6 leading-8 desc-font">
                 Every project is driven by our client's business objectives. We
                 believe successful project management extends beyond
                 construction—it requires strategic planning, digital oversight,
@@ -127,7 +127,7 @@ function Aboutus() {
                 innovation.
               </p>
 
-              <p className="text-gray-400 mt-6 leading-8">
+              <p className="text-gray-400 mt-6 leading-8 desc-font">
                 Our philosophy combines engineering excellence with technology,
                 ensuring every stakeholder has complete visibility throughout
                 the project lifecycle.
@@ -139,7 +139,7 @@ function Aboutus() {
                 <h3 className="text-white font-semibold text-xl">
                   Client First
                 </h3>
-                <p className="text-gray-400 mt-2">
+                <p className="text-gray-400 mt-2 desc-font">
                   Every decision is aligned with our client's business goals.
                 </p>
               </div>
@@ -148,7 +148,7 @@ function Aboutus() {
                 <h3 className="text-white font-semibold text-xl">
                   Agile Execution
                 </h3>
-                <p className="text-gray-400 mt-2">
+                <p className="text-gray-400 mt-2 desc-font">
                   Flexible project management methodologies for faster decision
                   making.
                 </p>
@@ -158,7 +158,7 @@ function Aboutus() {
                 <h3 className="text-white font-semibold text-xl">
                   Digital Innovation
                 </h3>
-                <p className="text-gray-400 mt-2">
+                <p className="text-gray-400 mt-2 desc-font">
                   Powered by our proprietary C2M platform for intelligent
                   project monitoring and collaboration.
                 </p>
@@ -169,7 +169,7 @@ function Aboutus() {
       </section>
 
       <section className="py-14 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-8xl mx-auto ml-10 mr-10 px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div>
@@ -182,7 +182,7 @@ function Aboutus() {
                 <span className="ml-3 text-blue-600">Cillages One</span>
               </h2>
 
-              <p className="mt-8 text-gray-600 leading-8 text-lg">
+              <p className="mt-8 text-gray-600 leading-8 text-lg desc-font">
                 Cillages One is the intelligent automation division of Cillages,
                 delivering innovative solutions for homes, offices, commercial
                 buildings, hospitality, and enterprise environments. Designed to
@@ -191,7 +191,7 @@ function Aboutus() {
                 into one powerful ecosystem.
               </p>
 
-              <p className="mt-6 text-gray-600 leading-8 text-lg">
+              <p className="mt-6 text-gray-600 leading-8 text-lg desc-font">
                 From smart home automation and intelligent lighting to
                 networking, surveillance, access control, and AI-powered
                 building management, Cillages One empowers clients to build
@@ -201,42 +201,45 @@ function Aboutus() {
             </div>
 
             {/* Right Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Smart Home Automation
+                  Intelligence in Project Life Cycle
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
+                <p className="mt-3 text-sm leading-7 text-gray-600 desc-font">
+                  • Feasibility & Master Plan Oversight <br />
+                  • Integrated Infrastructure Delivery <br />
+                  • Community Asset Development <br />
+                  • Lifecycle Operations & Maintenance <br />
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  International technology partner
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-gray-600 desc-font">
+                  • Intel <br />
+                  • Nvidia <br />
+                  • SAMSUNG <br />
+                  • Qualcomm
+                  <br />
+                </p>
+              </div>
+              <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Smart Home Spaces
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-gray-600 desc-font desc-font">
                   Intelligent control of lighting, climate, entertainment, and
                   smart living environments.
                 </p>
               </div>
-
               <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  Office & Building Automation
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
-                  Integrated automation for offices, commercial buildings, and
-                  enterprise facilities.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
-                <h3 className="text-lg font-semibold text-gray-900">
-                  Smart Security
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
-                  CCTV surveillance, access control, intrusion detection, and
-                  integrated security systems.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 ">
                   Networking Solutions
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
+                <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                   High-performance wired and wireless networking infrastructure
                   for homes and businesses.
                 </p>
@@ -246,7 +249,7 @@ function Aboutus() {
                 <h3 className="text-lg font-semibold text-gray-900">
                   AI & Smart Infrastructure
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
+                <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                   AI-powered monitoring, intelligent analytics, and connected
                   infrastructure for modern developments.
                 </p>
@@ -256,7 +259,7 @@ function Aboutus() {
                 <h3 className="text-lg font-semibold text-gray-900">
                   Building Management Systems
                 </h3>
-                <p className="mt-2 text-sm leading-6 text-gray-600">
+                <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                   Centralized control of lighting, HVAC, energy management,
                   security, and building operations from a unified platform.
                 </p>

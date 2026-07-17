@@ -64,7 +64,7 @@ function AlliedServices() {
                 <span className="text-blue-400">Management Excellence</span>
               </h1>
 
-              <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
+              <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-200 desc-font">
                 Cillages offers a comprehensive portfolio of allied services
                 including Program Management, Process Reviews, Quality Audits,
                 Safety Audits, and EHS compliance—helping clients deliver
@@ -99,7 +99,7 @@ function AlliedServices() {
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600">
+          <p className="mx-auto mt-8 max-w-4xl text-lg leading-8 text-gray-600 desc-font">
             At Cillages, our expertise extends beyond Project Management
             Consultancy. We offer a comprehensive portfolio of allied services
             that strengthen project execution through strategic planning,
@@ -107,7 +107,7 @@ function AlliedServices() {
             continuous project monitoring.
           </p>
 
-          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600">
+          <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-gray-600 desc-font">
             From Program Management and Process Reviews to Quality Audits,
             Safety Audits, and Environment, Health & Safety (EHS) compliance,
             our multidisciplinary team works closely with developers,
@@ -123,7 +123,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Program Management
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Strategic planning, monitoring, reporting, and schedule
                 management.
               </p>
@@ -133,7 +133,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Process Review
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Improving project efficiency through systematic process
                 evaluation.
               </p>
@@ -143,7 +143,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Quality Audits
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Independent quality assessments for better construction
                 standards.
               </p>
@@ -153,7 +153,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Safety Audits
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Comprehensive EHS reviews to create safer construction
                 environments.
               </p>
@@ -163,7 +163,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 Risk Assessment
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Identifying project risks and recommending effective mitigation
                 plans.
               </p>
@@ -173,7 +173,7 @@ function AlliedServices() {
               <h3 className="text-lg font-semibold text-gray-900">
                 EHS Compliance
               </h3>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-sm leading-6 text-gray-600 desc-font">
                 Ensuring compliance with Environment, Health & Safety standards.
               </p>
             </div>
@@ -193,7 +193,7 @@ function AlliedServices() {
               Specialized Services That Add Value
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Beyond Project Management Consultancy, Cillages offers specialized
               services that strengthen project planning, improve quality,
               enhance safety, and reduce operational risks throughout the
@@ -217,7 +217,9 @@ function AlliedServices() {
                   {service.title}
                 </h3>
 
-                <p className="mt-5 leading-8 text-gray-600">{service.desc}</p>
+                <p className="mt-5 leading-8 text-gray-600 desc-font">
+                  {service.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -236,7 +238,7 @@ function AlliedServices() {
               Quality & Safety Excellence
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Cillages believes that quality and safety are fundamental to every
               successful project. Through structured audits, technical reviews,
               and Environment, Health & Safety (EHS) assessments, we help
@@ -257,7 +259,7 @@ function AlliedServices() {
                 Quality Review & Audits
               </h3>
 
-              <p className="mt-4 leading-8 text-gray-600">
+              <p className="mt-4 leading-8 text-gray-600 desc-font">
                 Our experienced engineers evaluate project documentation,
                 construction quality, statutory approvals, testing reports, and
                 site execution to identify risks, defects, and opportunities for
@@ -268,7 +270,7 @@ function AlliedServices() {
                 {quality.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="mt-1 text-blue-600" />
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-700 desc-font">{item}</span>
                   </div>
                 ))}
               </div>
@@ -285,7 +287,7 @@ function AlliedServices() {
                 Safety Review & Audits
               </h3>
 
-              <p className="mt-4 leading-8 text-gray-600">
+              <p className="mt-4 leading-8 text-gray-600 desc-font">
                 Our structured safety audits help clients establish safer
                 workplaces through EHS compliance, hazard identification, risk
                 mitigation, emergency planning, and continuous safety
@@ -296,7 +298,7 @@ function AlliedServices() {
                 {safety.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle2 size={18} className="mt-1 text-blue-600" />
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-gray-700 desc-font">{item}</span>
                   </div>
                 ))}
               </div>
@@ -319,7 +321,7 @@ function AlliedServices() {
             Beyond Project Management
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100 desc-font">
             From Program Management and Process Reviews to Quality Audits,
             Safety Audits, and EHS compliance, Cillages provides specialized
             allied services that improve project performance, reduce risks, and

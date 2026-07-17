@@ -24,15 +24,15 @@ const services = [
     link: "/allied-services",
   },
   {
-    name: "Home Automation",
+    name: "Home Spaces",
     link: "/home-automation",
   },
   {
-    name: "Office Automaiton",
+    name: "Office Spaces",
     link: "/office-automation",
   },
   {
-    name: "Hospitality Automation",
+    name: "Hospitality Spaces",
     link: "/hospitality-automation",
   },
 ];
@@ -50,7 +50,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-6 text-lg font-semibold">About Us</h3>
 
-            <p className="leading-7 text-sm text-gray-400">
+            <p className="leading-7 text-sm text-gray-400 ">
               For over three decades, Cillages has partnered with clients to
               deliver successful projects through engineering excellence,
               project management, and digital innovation. Our Cillages One
@@ -137,12 +137,12 @@ export default function Footer() {
                 <FaInstagram size={20} />
               </a>
 
-              <a
+              {/* <a
                 href="#"
                 className="rounded-xl border border-white/10 bg-white/5 p-3 transition hover:border-cyan-500 hover:bg-cyan-500"
               >
                 <FaFacebookF size={20} />
-              </a>
+              </a> */}
 
               <a
                 href="mailto:sales@cillages.com"

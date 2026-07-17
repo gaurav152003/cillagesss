@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TiArrowSortedDown } from "react-icons/ti";
 import cillagesOneLogo from "../assets/ucc.png";
 import { Link } from "react-router-dom";
-
+import cillageslogo from "../assets/cillages-one-navbar.png";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   return (
     <motion.nav className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-[95%] z-50">
-      <div className="bg-white/60 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl">
+      <div className="bg-white/70 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl">
         {/* Logo */}
         <div className="flex flex-col items-center">
           <Link to="/">
@@ -156,15 +156,15 @@ export default function Navbar() {
             >
               {[
                 {
-                  name: "Home Automation",
+                  name: "Home Spaces",
                   link: "/home-automation",
                 },
                 {
-                  name: "Office Automation",
+                  name: "Office Spaces",
                   link: "/office-automation",
                 },
                 {
-                  name: "Hospitality Automation",
+                  name: "Hospitality Spaces",
                   link: "/hospitality-automation",
                 },
               ].map((item) => (
@@ -203,49 +203,74 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link
+            {/* <Link
               to="/cillages-one"
               className="
-      group
-      relative
-      overflow-hidden
-      flex
-      items-center
-      rounded
-      border
-      border-blue-300/40
-      bg-gradient-to-r
-      from-blue-700/95
-      via-blue-600
-      to-blue-500
-      px-4
-      py-2
-      backdrop-blur-2xl
-      shadow-[0_10px_40px_rgba(37,99,235,0.45)]
-      transition-all
-      duration-300
-      hover:scale-105
-      hover:shadow-[0_20px_60px_rgba(37,99,235,0.65)]
-      hover:border-white/40
+      bg-white/70 backdrop-blur-xl border border-white/10 rounded px-2 py-2  flex items-center justify-between shadow-2xl
     "
-            >
-              {/* Shine Effect */}
-              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-full transition-transform duration-1000" />
+            > */}
+            {/* Shine Effect */}
+            {/* <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:translate-x-full transition-transform duration-1000" /> */}
 
-              {/* NEW Badge */}
-              {/* <span className="absolute -top-2 -right-2 rounded-full bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700 shadow-lg">
+            {/* NEW Badge */}
+            {/* <span className="absolute -top-2 -right-2 rounded-full bg-white px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-blue-700 shadow-lg">
                 NEW
               </span> */}
 
-              <div className="relative z-10">
-                {/* Main Title */}
-                <h3 className="text-xl font-extrabold tracking-wide text-white drop-shadow-lg">
-                  Cillages One
-                </h3>
+            {/* <div className="relative z-10"> */}
+            {/* Main Title */}
+            {/* <h3 className="text-xl font-extrabold tracking-wide text-white drop-shadow-lg"> */}
+            {/* Cillages One */}
+            {/* </h3> */}
 
-                {/* Tagline */}
-                <p className="mt-1 whitespace-nowrap text-[12px] font-medium text-blue-100">
-                  Connecting Every Process • Automating Every Workflow
+            {/* Tagline */}
+            {/* <p className="mt-1 whitespace-nowrap text-[14px] font-medium text-blue-100"> */}
+            {/* Unified System For Intelligent Spaces */}
+            {/* </p> */}
+            {/* </div> */}
+            {/* <div className="flex flex-col items-center">
+                {" "}
+                <img
+                  src={cillageslogo}
+                  alt="logo"
+                  className="h-12 object-contain"
+                />
+                <a href="/">
+                  {" "}
+                  <p className="text-black  text-xs text-center mt-1">
+                    Unified System For Intelligent Spaces
+                  </p>
+                </a>
+              </div>
+            </Link> */}
+            <Link
+              to="/cillages-one"
+              className="
+    relative flex items-center justify-center
+    rounded
+    px-5 py-2
+    bg-gradient-to-r from-blue-400 via-blue-400 to-blue-400
+    shadow-lg shadow-cyan-500/30
+    border border-white/20
+    transition-all duration-300
+    hover:scale-105
+    hover:shadow-xl hover:shadow-cyan-500/50
+    hover:-translate-y-0.5
+    overflow-hidden
+  "
+            >
+              {/* Shine Effect */}
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent hover:translate-x-full transition-transform duration-1000" />
+
+              <div className="relative z-10 flex flex-col items-center text-center">
+                <img
+                  src={cillageslogo}
+                  alt="Cillages One"
+                  className="h-10 w-auto  rounded"
+                />
+
+                <p className="mt-1 text-[11px] font-semibold text-black leading-tight whitespace-nowrap">
+                  Unified System For Intelligent Spaces
                 </p>
               </div>
             </Link>
@@ -254,7 +279,7 @@ export default function Navbar() {
 
         {/* Mobile Icon */}
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-black"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -270,7 +295,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden mt-4 overflow-hidden rounded border border-black/10 bg-white/10 backdrop-blur-xl shadow-2xl"
+            className="lg:hidden mt-4 overflow-hidden rounded border border-black/10 bg-white/80 backdrop-blur-xl shadow-2xl"
           >
             <div className="flex flex-col py-3 text-black">
               <button
@@ -391,15 +416,15 @@ export default function Navbar() {
                     >
                       {[
                         {
-                          name: "Home Automation",
+                          name: "Home Spaces",
                           link: "/home-automation",
                         },
                         {
-                          name: "Office Automation",
+                          name: "Office Spaces",
                           link: "/office-automation",
                         },
                         {
-                          name: "Hospitality Automation",
+                          name: "Hospitality Spaces",
                           link: "/hospitality-automation",
                         },
                       ].map((item) => (
@@ -447,24 +472,53 @@ export default function Navbar() {
               >
                 <Link to="/contact">Contact</Link>
               </button>
-              <Link
+              {/* <Link
                 onClick={() => setMobileOpen(false)}
                 to="/cillages-one"
                 className="relative mx-4 mt-4 flex rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 p-4 shadow-lg transition-all duration-300 hover:scale-[1.02]"
               >
-                <span className="absolute -top-2 -right-2 rounded-full bg-white px-2 py-1 text-[10px] font-bold text-blue-600">
-                  NEW
-                </span>
-
                 <div>
                   <h3 className="text-base font-semibold text-white">
                     Cillages One
                   </h3>
 
                   <p className="mt-1 text-xs text-blue-100 leading-5">
-                    Connecting Every Process.
+                    Unified System
                     <br />
-                    Automating Every Workflow.
+                    For Intelligent Spaces
+                  </p>
+                </div>
+              </Link> */}
+              <Link
+                to="/cillages-one"
+                className="
+    relative flex items-center justify-center
+    rounded
+    px-5 py-2
+    bg-gradient-to-r from-blue-500 via-blue-500 to-blue-500
+    shadow-lg shadow-cyan-500/30
+    border border-white/20
+    transition-all duration-300
+    hover:scale-105
+    hover:shadow-xl hover:shadow-cyan-500/50
+    hover:-translate-y-0.5
+    overflow-hidden
+    mr-2 
+    ml-2
+  "
+              >
+                {/* Shine Effect */}
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent hover:translate-x-full transition-transform duration-1000" />
+
+                <div className="relative z-10 flex flex-col items-center text-center">
+                  <img
+                    src={cillageslogo}
+                    alt="Cillages One"
+                    className="h-10 w-auto  rounded"
+                  />
+
+                  <p className="mt-1 text-[11px] font-semibold text-black leading-tight whitespace-nowrap">
+                    Unified System For Intelligent Spaces
                   </p>
                 </div>
               </Link>

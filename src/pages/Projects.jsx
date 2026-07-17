@@ -8,45 +8,134 @@ import project2 from "../assets/magnet.jpg";
 import project3 from "../assets/rustomjee.jpg";
 import project4 from "../assets/neptune.jpg";
 import Footer from "../components/Footer";
+import { useState } from "react";
+
 function Projects() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <section className="relative h-[100vh] overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
+        {/* Background */}
         <img
           src={projectHero}
           alt="Our Projects"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/10" />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30" />
 
+        {/* Content */}
         <div className="relative z-10 flex h-full items-center">
-          <div className="mx-3 max-w-7xl px-6">
-            <div className="max-w-3xl">
-              <h1 className="mt-8 text-5xl font-bold leading-tight text-white md:text-7xl">
-                Building
-                <br />
-                <span className="text-blue-400">Landmark Developments</span>
-              </h1>
+          <div className="mx-auto w-full max-w-7xl px-6">
+            {/* Top Row */}
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              {/* Left Side */}
+              <div className="max-w-3xl">
+                <h1 className="mt-8 md:mt-0 text-5xl md:text-7xl font-bold leading-tight text-white">
+                  Building
+                  <br />
+                  <span className="text-blue-400">Landmark Developments</span>
+                </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200">
-                Over three decades of delivering residential, commercial,
-                industrial, institutional, redevelopment, infrastructure and
-                township projects across India.
-              </p>
+                <p className="mt-8 max-w-2xl text-base md:text-xl leading-8 text-gray-200 desc-font">
+                  Over three decades of delivering residential, commercial,
+                  industrial, institutional, redevelopment, infrastructure, and
+                  township projects across India.
+                </p>
 
-              <div className="mt-10 flex flex-wrap gap-5">
-                <a
-                  href="/contact"
-                  className="rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
+                <div className="mt-10">
+                  <a
+                    href="/contact"
+                    className="inline-flex rounded-full bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
+                  >
+                    Start Your Project
+                  </a>
+                </div>
+              </div>
+
+              {/* Right Side */}
+              <div className="mt-2 lg:mt-2 lg:ml-10">
+                <button
+                  onClick={() => setOpen(true)}
+                  className="rounded-full border border-white/30 bg-blue-600 backdrop-blur-md px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:scale-105"
                 >
-                  Start Your Project
-                </a>
+                  My Project
+                </button>
+                {open && (
+                  <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+                    <div className="relative w-full max-w-md rounded-3xl bg-white shadow-2xl overflow-hidden">
+                      {/* Header */}
+                      <div className="bg-gradient-to-r from-blue-700 to-blue-500 p-8 text-center">
+                        {/* <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl">
+                          📁
+                        </div> */}
+
+                        <h2 className="mt-4 text-3xl font-bold text-white">
+                          Project Portal
+                        </h2>
+
+                        <p className="mt-2 text-blue-100">
+                          Access your live project updates
+                        </p>
+                      </div>
+
+                      {/* Form */}
+                      <form className="space-y-5 p-8">
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project ID
+                          </label>
+
+                          <input
+                            required
+                            type="text"
+                            placeholder="Enter Project ID"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project Password
+                          </label>
+
+                          <input
+                            required
+                            type="password"
+                            placeholder="Enter Password"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <button
+                          onClick={() =>
+                            alert("Please enter the correct ID and password.")
+                          }
+                          type="submit"
+                          className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700"
+                        >
+                          Login
+                        </button>
+                      </form>
+
+                      {/* Close */}
+                      <button
+                        onClick={() => setOpen(false)}
+                        className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* section 2 */}
       <section className="bg-white py-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
@@ -85,7 +174,7 @@ function Projects() {
               Landmark Developments
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Over three decades, Cillages has successfully delivered landmark
               residential, commercial, institutional, infrastructure, and
               township developments that reflect engineering excellence,
@@ -112,7 +201,7 @@ function Projects() {
                   320 Acre Integrated Township
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   One of the group's landmark developments featuring integrated
                   residential communities, commercial districts, infrastructure,
                   public amenities, and master planning across 320 acres in
@@ -144,7 +233,7 @@ function Projects() {
                   Magnet Mall
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   A landmark commercial destination integrating retail,
                   entertainment, office spaces, and hospitality with modern
                   project management practices and world-class infrastructure.
@@ -187,7 +276,7 @@ function Projects() {
                   Rustomjee – Natraj
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   Premium Grade-A office development strategically located at
                   the junction of the Western Express Highway and Andheri–Kurla
                   Road, offering world-class commercial spaces.
@@ -219,7 +308,7 @@ function Projects() {
                   Living Point
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   A premium mixed-use residential development offering modern
                   living spaces, landscaped surroundings, lifestyle amenities,
                   and sustainable urban planning.
@@ -263,7 +352,7 @@ function Projects() {
                   Siddhivinayak Medical Centre
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   Project management for the construction and interior
                   development of a modern medical centre for the Siddhivinayak
                   Temple Trust
@@ -295,7 +384,7 @@ function Projects() {
                   SVKM Educational Campus
                 </h3>
 
-                <p className="mt-6 text-gray-600 leading-8">
+                <p className="mt-6 text-gray-600 leading-8 desc-font">
                   Project management for the expansion and development of Mukesh
                   Patel School of Technology, Management & Engineering under
                   SVKM.",
@@ -345,7 +434,7 @@ function Projects() {
             Next Landmark Project?
           </h2>
 
-          <p className="mt-8 text-lg leading-8 text-blue-100 max-w-3xl mx-auto">
+          <p className="mt-8 text-lg leading-8 text-blue-100 max-w-3xl mx-auto desc-font">
             From residential and commercial developments to large-scale
             infrastructure, redevelopment, and smart building solutions,
             Cillages is your trusted partner for successful project delivery.

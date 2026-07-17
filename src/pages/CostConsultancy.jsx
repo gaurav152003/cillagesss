@@ -143,7 +143,7 @@ function CostConsultancy() {
                 <span className="text-blue-400">Certainty & Value</span>
               </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200">
+              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200 desc-font">
                 Our Cost Consultancy and Quantity Surveying services provide
                 comprehensive cost planning, budgeting, procurement support,
                 financial monitoring, and value engineering to ensure projects
@@ -193,21 +193,21 @@ function CostConsultancy() {
                 <span className="text-blue-600">Controlling Every Cost.</span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
+              <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
                 Cillages provides comprehensive Cost Consultancy and Quantity
                 Surveying services to help clients achieve the best value while
                 maintaining complete financial control throughout the project
                 lifecycle.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 Our experienced Cost Management team develops structured cost
                 planning, budgeting, procurement, and monitoring systems that
                 provide complete transparency for developers, consultants,
                 contractors, and project stakeholders.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 From preliminary feasibility studies and tender documentation to
                 post-contract cost control, financial reporting, and final
                 account settlement, we ensure projects remain aligned with
@@ -217,37 +217,47 @@ function CostConsultancy() {
 
               {/* Highlights */}
 
-              <div className="mt-12 grid grid-cols-2 gap-6">
+              <div className="mt-12 grid grid-cols-2 gap-6 desc-font">
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Cost Planning</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Cost Planning
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">
+                  <p className="font-medium text-gray-800 desc-font">
                     Quantity Surveying
                   </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Value Engineering</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Value Engineering
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Tender Management</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Tender Management
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Cost Monitoring</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Cost Monitoring
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Financial Control</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Financial Control
+                  </p>
                 </div>
               </div>
             </div>
@@ -261,7 +271,7 @@ function CostConsultancy() {
               Comprehensive Cost Consultancy Services
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Cillages delivers end-to-end Cost Consultancy and Quantity
               Surveying services, providing complete financial visibility,
               commercial management, procurement support, and cost control from
@@ -283,7 +293,9 @@ function CostConsultancy() {
                   {service.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{service.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {service.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -296,7 +308,7 @@ function CostConsultancy() {
               Four Stages of Cost Consultancy
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Our structured quantity surveying and cost management methodology
               ensures complete financial transparency from budgeting and
               tendering through construction monitoring and final project
@@ -318,7 +330,7 @@ function CostConsultancy() {
                   {stage.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
                   {stage.description}
                 </p>
 
@@ -327,7 +339,7 @@ function CostConsultancy() {
                     <div key={i} className="flex gap-3">
                       <CheckCircle size={18} className="mt-1 text-blue-600" />
 
-                      <span className="text-gray-700">{point}</span>
+                      <span className="text-gray-700 desc-font">{point}</span>
                     </div>
                   ))}
                 </div>
@@ -353,7 +365,7 @@ function CostConsultancy() {
             Stay Within Budget.
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100 desc-font">
             From feasibility studies and cost planning to tender management,
             financial monitoring, and project close-out, Cillages delivers
             comprehensive Cost Consultancy and Quantity Surveying services that

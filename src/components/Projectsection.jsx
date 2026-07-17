@@ -83,7 +83,7 @@ export default function ProjectsSection() {
               Signature Projects
             </h2>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-600 desc-font">
               From landmark townships and commercial developments to
               educational, healthcare, and mixed-use infrastructure, every
               project reflects our commitment to engineering excellence,

@@ -118,7 +118,7 @@ function DevelopmentSolution() {
                 <span className="text-blue-400">Development Solutions</span>
               </h1>
 
-              <p className="mt-8 text-lg leading-8 text-gray-200 max-w-xl">
+              <p className="mt-8 text-lg leading-8 text-gray-200 max-w-xl desc-font">
                 From feasibility studies and project planning to construction,
                 legal documentation, marketing, and successful delivery,
                 Cillages manages every stage of the development lifecycle.
@@ -147,14 +147,14 @@ function DevelopmentSolution() {
                 <span className="text-blue-600">One Trusted Partner.</span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
+              <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
                 Whether it's self-redevelopment, residential projects,
                 commercial developments, or corporate real estate, Cillages
                 provides complete development management from concept to
                 completion.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 Our multidisciplinary team coordinates engineering, finance,
                 legal, approvals, design, construction, and sales to ensure
                 projects are delivered efficiently, transparently, and
@@ -172,7 +172,7 @@ function DevelopmentSolution() {
               End-to-End Development Services
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               We provide complete development management solutions for
               self-redevelopment, residential, commercial, infrastructure, and
               corporate projects—covering every stage from planning to
@@ -195,7 +195,9 @@ function DevelopmentSolution() {
                   {service.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{service.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {service.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -209,7 +211,7 @@ function DevelopmentSolution() {
               From Vision to Successful Delivery
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Our structured development methodology ensures every project is
               executed with precision, transparency, and complete accountability
               from concept to completion.
@@ -230,7 +232,9 @@ function DevelopmentSolution() {
                   {step.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{step.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {step.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -249,7 +253,7 @@ function DevelopmentSolution() {
             Vision Into Reality
           </h2>
 
-          <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-blue-100">
+          <p className="mt-8 max-w-3xl mx-auto text-lg leading-8 text-blue-100 desc-font">
             Whether you're planning a self-redevelopment project, a commercial
             development, a township, or a large-scale infrastructure project,
             Cillages delivers end-to-end development solutions backed by over

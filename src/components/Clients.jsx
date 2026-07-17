@@ -6,10 +6,60 @@ import logo3 from "../assets/company logo/Integrow.png";
 import logo4 from "../assets/company logo/Neptune_Logo.png";
 import logo5 from "../assets/company logo/Ninaniya_Logo.jpg";
 import logo6 from "../assets/company logo/rustomjee_logo.png";
-import logo7 from "../assets/company logo/Shruti_Structures_Logo.png";
 import logo8 from "../assets/company logo/transindia.webp";
-
-const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
+import logo32 from "../assets/company logo/ufo.avif";
+import logo33 from "../assets/company logo/Infoblox.jpg";
+import logo34 from "../assets/company logo/Aruba.png";
+import logo35 from "../assets/company logo/jindal.jpg";
+import logo36 from "../assets/company logo/csscorp.jpg";
+import logo37 from "../assets/company logo/avm.jpg";
+import logo39 from "../assets/company logo/vbj.png";
+import logo40 from "../assets/company logo/rajas.png";
+import logo41 from "../assets/company logo/kauvery.jpg";
+import logo42 from "../assets/company logo/apollo.png";
+import logo43 from "../assets/company logo/Pumalift.jpg";
+import logo44 from "../assets/company logo/caravel.png";
+import logo45 from "../assets/company logo/Vakrangee_Limited_Logo.png";
+import logo46 from "../assets/company logo/white.jpg";
+import logo47 from "../assets/company logo/aster.png";
+import logo48 from "../assets/company logo/poorvika.jpg";
+import logo49 from "../assets/company logo/kotak.png";
+import logo52 from "../assets/company logo/qube.jpg";
+import logo53 from "../assets/company logo/megh.jpg";
+import logo54 from "../assets/company logo/sbrander.jpg";
+import logo55 from "../assets/company logo/gem.jpg";
+import logo56 from "../assets/company logo/srm.svg";
+const logos = [
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo8,
+  logo32,
+  logo33,
+  logo34,
+  logo35,
+  logo36,
+  logo37,
+  logo39,
+  logo40,
+  logo41,
+  logo42,
+  logo43,
+  logo44,
+  logo45,
+  logo46,
+  logo47,
+  logo48,
+  logo49,
+  logo52,
+  logo53,
+  logo54,
+  logo55,
+  logo56,
+];
 
 export default function Clients() {
   return (
@@ -54,7 +104,7 @@ export default function Clients() {
                 x: ["0%", "-50%"],
               }}
               transition={{
-                duration: 25,
+                duration: 55,
                 repeat: Infinity,
                 ease: "linear",
               }}
@@ -82,7 +132,7 @@ export default function Clients() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
           viewport={{ once: true }}
-          className="mx-auto mt-10 max-w-3xl text-center text-lg leading-8 text-gray-600"
+          className="mx-auto mt-10 max-w-3xl text-center text-lg leading-8 text-gray-600 desc-font"
         >
           Trusted by developers, architects, builders, and businesses to create
           smarter spaces with project management, engineering excellence, and

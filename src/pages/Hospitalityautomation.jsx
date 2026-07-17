@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Hotel,
   BedDouble,
@@ -77,9 +77,10 @@ const features = [
   },
 ];
 function Hospitalityautomation() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <section className="relative h-[100vh] overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         {/* Background Image */}
         <img
           src={heroImage}
@@ -92,57 +93,138 @@ function Hospitalityautomation() {
 
         {/* Content */}
         <div className="relative z-10 flex h-full items-center">
-          <div className="mx-3 max-w-7xl px-6">
-            <div className="max-w-3xl">
-              {/* <span className="inline-flex rounded-full border border-cyan-400/30 bg-cyan-500/20 px-5 py-2 text-sm font-semibold uppercase tracking-[4px] text-cyan-300">
-                  Cillages One • Hospitality Automation
-                </span> */}
+          <div className="mx-auto w-full max-w-7xl px-6">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              {/* Left Content */}
+              <div className="max-w-3xl">
+                <h1 className="mt-20 text-4xl font-bold leading-tight text-white md:text-7xl">
+                  Redefining
+                  <br />
+                  <span className="text-cyan-400">Smart Hospitality</span>
+                </h1>
 
-              <h1 className="mt-8 text-4xl font-bold leading-tight text-white md:text-7xl">
-                Redefining
-                <br />
-                <span className="text-cyan-400">Smart Hospitality</span>
-              </h1>
+                <p className="mt-4 md:mt-8 max-w-2xl text-sm md:text-lg leading-8 text-gray-200 desc-font">
+                  Deliver exceptional guest experiences with intelligent
+                  hospitality automation. From smart guest rooms and digital
+                  concierge services to centralized hotel management, Cillages
+                  One helps hotels, resorts, and serviced apartments create
+                  seamless, connected, and energy-efficient environments.
+                </p>
 
-              <p className="mt-4 md:mt-8 max-w-2xl text-sm md:text-lg leading-8 text-gray-200">
-                Deliver exceptional guest experiences with intelligent
-                hospitality automation. From smart guest rooms and digital
-                concierge services to centralized hotel management, Cillages One
-                helps hotels, resorts, and serviced apartments create seamless,
-                connected, and energy-efficient environments.
-              </p>
+                {/* Stats */}
+                <div className="mt-2 md:mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      24/7
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Hotel Monitoring
+                    </p>
+                  </div>
 
-              {/* Stats */}
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      Smart
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">Guest Rooms</p>
+                  </div>
 
-              <div className="mt-10 md:mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">24/7</h3>
-                  <p className="mt-2 text-sm text-gray-300">Hotel Monitoring</p>
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      IoT
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Connected Systems
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      Energy
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Efficient Operations
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">Smart</h3>
-                  <p className="mt-2 text-sm text-gray-300">Guest Rooms</p>
-                </div>
+              {/* Right Side */}
+              <div className="mt-8 lg:mt-12 lg:ml-10">
+                <button
+                  onClick={() => setOpen(true)}
+                  className="rounded-full border border-cyan-400/40 bg-cyan-400 backdrop-blur-xl px-8 py-4 font-semibold text-white shadow-2xl transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-500 hover:text-white hover:scale-105"
+                >
+                  My Project
+                </button>
+                {open && (
+                  <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+                    <div className="relative w-full max-w-md rounded-3xl bg-white shadow-2xl overflow-hidden">
+                      {/* Header */}
+                      <div className="bg-gradient-to-r from-blue-700 to-blue-500 p-8 text-center">
+                        {/* <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl">
+                          📁
+                        </div> */}
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">IoT</h3>
-                  <p className="mt-2 text-sm text-gray-300">
-                    Connected Systems
-                  </p>
-                </div>
+                        <h2 className="mt-4 text-3xl font-bold text-white">
+                          Project Portal
+                        </h2>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">Energy</h3>
-                  <p className="mt-2 text-sm text-gray-300">
-                    Efficient Operations
-                  </p>
-                </div>
+                        <p className="mt-2 text-blue-100">
+                          Access your live project updates
+                        </p>
+                      </div>
+
+                      {/* Form */}
+                      <form className="space-y-5 p-8">
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project ID
+                          </label>
+
+                          <input
+                            type="text"
+                            placeholder="Enter Project ID"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project Password
+                          </label>
+
+                          <input
+                            type="password"
+                            placeholder="Enter Password"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <button
+                          type="submit"
+                          className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700"
+                        >
+                          Login
+                        </button>
+                      </form>
+
+                      {/* Close */}
+                      <button
+                        onClick={() => setOpen(false)}
+                        className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="bg-white py-14">
         <div className="mx-auto max-w-7xl px-6">
           {/* Heading */}
@@ -158,7 +240,7 @@ function Hospitalityautomation() {
               For Modern Hospitality
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Cillages One transforms hotels, resorts, serviced apartments, and
               luxury residences into connected hospitality environments. Our
               intelligent automation solutions seamlessly integrate guest room
@@ -184,7 +266,9 @@ function Hospitalityautomation() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{item.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -203,7 +287,7 @@ function Hospitalityautomation() {
               Powering Modern Hospitality
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Cillages One integrates advanced automation technologies to
               simplify hotel operations, enhance guest comfort, strengthen
               security, and deliver exceptional hospitality experiences.
@@ -224,7 +308,9 @@ function Hospitalityautomation() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{item.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -247,7 +333,7 @@ function Hospitalityautomation() {
             With Smart Hospitality Automation
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100 desc-font">
             Empower your hotel, resort, serviced apartment, or hospitality
             business with intelligent automation solutions that enhance guest
             comfort, streamline operations, improve security, and reduce energy

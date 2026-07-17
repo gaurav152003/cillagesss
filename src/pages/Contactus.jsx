@@ -2,8 +2,29 @@ import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 
 import contactHero from "../assets/Contact-Us.jpg";
 import Footer from "../components/Footer";
-
+import emailjs from "@emailjs/browser";
 export default function Contact() {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        e.target,
+        "YOUR_PUBLIC_KEY",
+      )
+      .then(
+        () => {
+          alert("✅ Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("❌ Failed to send message.");
+          console.log(error);
+        },
+      );
+  }
   return (
     <>
       {/* ================= Hero ================= */}
@@ -15,7 +36,7 @@ export default function Contact() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
           <div className="max-w-4xl">
@@ -46,7 +67,7 @@ export default function Contact() {
                 We'd Love to Hear From You
               </h2>
 
-              <p className="text-gray-600 mt-8 leading-8">
+              <p className="text-gray-600 mt-8 leading-8 desc-font">
                 Have questions about our services or want to discuss your
                 upcoming project? Fill out the form and our team will get back
                 to you shortly.
@@ -118,33 +139,43 @@ export default function Contact() {
                 Send Us a Message
               </h3>
 
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={sendEmail}>
                 <input
+                  name="from_name"
                   type="text"
                   placeholder="Full Name"
+                  required
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
                 <input
+                  name="from_email"
                   type="email"
                   placeholder="Email Address"
+                  required
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
                 <input
+                  name="phone"
                   type="text"
                   placeholder="Phone Number"
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
                 <input
+                  name="company"
                   type="text"
                   placeholder="Company Name"
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
-                <select className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
-                  <option>Select Service</option>
+                <select
+                  name="service"
+                  required
+                  className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                >
+                  <option value="">Select Service</option>
                   <option>Cillages One - Smart Automation</option>
                   <option>Client Representation</option>
                   <option>Development Solutions</option>
@@ -160,12 +191,17 @@ export default function Contact() {
                 </select>
 
                 <textarea
+                  name="message"
                   rows="5"
                   placeholder="Tell us about your project..."
+                  required
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl py-4 font-semibold flex items-center justify-center gap-2 transition">
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-xl py-4 font-semibold flex items-center justify-center gap-2 transition"
+                >
                   <Send size={18} />
                   Send Message
                 </button>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-// import video from "../assets/CillagesFinal.mp4"; // Replace with your video
-
+import video from "../assets/CillagesFinal.mp4";
+import dashboard from "../assets/ucc.png";
 export default function WelcomeSection() {
   return (
     <section className="bg-white py-20">
@@ -12,11 +12,11 @@ export default function WelcomeSection() {
               Welcome to Cillages
             </p>
 
-            <h2 className="mt-4 text-4xl md:text-2xl font-bold text-gray-900">
+            <h2 className="mt-4 text-4xl md:text-2xl font-bold text-gray-900 head-font">
               Building Excellence Through Design, Culture & Technology
             </h2>
 
-            <p className="mt-6 text-gray-600 leading-8">
+            <p className="mt-6 text-gray-600 leading-8 desc-font">
               Established in 1993, Cillages is a client-focused Project
               Management Consultancy delivering comprehensive solutions across
               residential, commercial, industrial, infrastructure, and mixed-use
@@ -53,7 +53,10 @@ export default function WelcomeSection() {
 
             <div className="mt-10 flex gap-5">
               <button className="bg-blue-600 text-white px-7 py-3 rounded-full hover:bg-blue-700 transition">
-                <a href="/CillagesProfile.pptx" download="CillagesProfile.pptx">
+                <a
+                  href="/CillagesProfile.pptx"
+                  download="cillages.profile.2026.pptx"
+                >
                   Company Brochure
                 </a>
               </button>
@@ -70,11 +73,16 @@ export default function WelcomeSection() {
           {/* Right Video */}
           <div>
             <video
-              // src={video}
+              src={video}
               controls
               className="w-full rounded-3xl shadow-2xl"
             />
-            <a>video will be update after creating video and ppt of ucc</a>
+            {/* <a>video will be update after creating video and ppt of ucc</a> */}
+            {/* <img
+              src={dashboard}
+              alt="Community & Facility Management Platform"
+              className="rounded-3xl border border-gray-200 shadow-2xl"
+            /> */}
           </div>
         </div>
       </div>

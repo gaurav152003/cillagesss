@@ -92,7 +92,7 @@ export default function Client() {
                 <span className="text-blue-400">Delivering Confidence.</span>
               </h1>
 
-              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200">
+              <p className="mt-8 max-w-xl text-lg leading-8 text-gray-200 desc-font">
                 Acting as your trusted representative, Cillages safeguards your
                 interests through every milestone of the project lifecycle.
               </p>
@@ -162,21 +162,21 @@ export default function Client() {
                 </span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
+              <p className="mt-8 text-[15px] leading-8 text-gray-600 desc-font">
                 At Cillages, Client Representation extends beyond conventional
                 project management. We act as an extension of your organization,
                 protecting your interests while ensuring every decision aligns
                 with your business objectives.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-[15px]leading-8 text-gray-600 desc-font">
                 From project discovery and feasibility studies to consultant
                 coordination, contract management, execution, monitoring, and
                 successful handover, we oversee every stage with transparency,
                 accountability, quality, and cost efficiency.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-[15px] leading-8 text-gray-600 desc-font">
                 In partnership with
                 <span className="font-semibold text-blue-600">
                   {" "}
@@ -189,39 +189,45 @@ export default function Client() {
               </p>
 
               {/* Features */}
-              <div className="mt-12 grid grid-cols-2 gap-6">
+              <div className="mt-12 grid grid-cols-2 gap-4 desc-font">
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Project Planning</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Project Planning
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">
+                  <p className="font-medium text-gray-800 desc-font">
                     Contract Management
                   </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">
+                  <p className="font-medium text-gray-800 desc-font">
                     Stakeholder Coordination
                   </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Risk Management</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Risk Management
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">Quality Assurance</p>
+                  <p className="font-medium text-gray-800 desc-font">
+                    Quality Assurance
+                  </p>
                 </div>
 
                 <div className="flex items-center gap-3 rounded-xl border border-gray-200 p-4">
                   <div className="h-3 w-3 rounded-full bg-blue-600"></div>
-                  <p className="font-medium text-gray-800">
+                  <p className="font-medium text-gray-800 desc-font">
                     Investor Representation
                   </p>
                 </div>
@@ -241,7 +247,7 @@ export default function Client() {
               How We Represent Our Clients
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Every project is managed through a structured methodology that
               ensures transparency, accountability, and successful delivery
               while safeguarding our clients' interests at every stage.
@@ -262,7 +268,7 @@ export default function Client() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
                   {item.description}
                 </p>
               </div>
@@ -287,14 +293,14 @@ export default function Client() {
                 <span className="text-blue-600">S.P. Associates</span>
               </h2>
 
-              <p className="mt-8 text-lg leading-8 text-gray-600">
+              <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
                 Cillages and S.P. Associates have joined forces to deliver
                 comprehensive Project Management Consultancy and Client
                 Representation services backed by decades of engineering,
                 redevelopment, and infrastructure expertise.
               </p>
 
-              <p className="mt-6 text-lg leading-8 text-gray-600">
+              <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
                 With more than{" "}
                 <strong>1,200 successfully managed projects</strong>, experience
                 across residential, commercial, industrial, infrastructure, and
@@ -344,45 +350,8 @@ export default function Client() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-14">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Heading */}
-          <div className="max-w-3xl mx-auto text-center">
-            {/* <span className="inline-flex rounded-full bg-blue-50 px-5 py-2 text-sm font-semibold uppercase tracking-[4px] text-blue-600">
-              Trusted By
-            </span> */}
-
-            <h2 className="mt-6 text-5xl font-bold text-gray-900">
-              Our Valued Clients & Partners
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Over the years, Cillages has partnered with leading developers,
-              consultants, institutions, and businesses to deliver successful
-              projects with transparency, quality, and engineering excellence.
-            </p>
-          </div>
-
-          {/* Logos */}
-          <div className="mt-20 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4">
-            {clients.map((client) => (
-              <div
-                key={client.id}
-                className="group flex h-40 flex-col items-center justify-center rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl"
-              >
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-h-16 w-auto object-contain grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
-                />
-
-                <p className="mt-6 text-sm font-semibold text-gray-700">
-                  {client.name}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section>
+        <Clients />
       </section>
       <section className="relative overflow-hidden bg-blue-600 py-24">
         <div className="absolute -top-32 -left-32 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
@@ -399,7 +368,7 @@ export default function Client() {
             Our Responsibility.
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-blue-100 desc-font">
             Whether you're a developer, investor, housing society, or corporate
             organization, Cillages represents your interests from project
             inception to successful completion with complete transparency,

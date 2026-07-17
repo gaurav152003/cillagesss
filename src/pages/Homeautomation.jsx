@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../assets/homeautomation.jpg";
 import {
   Lightbulb,
@@ -82,10 +82,12 @@ const features = [
     desc: "Operate your home effortlessly using Alexa, Google Assistant, or Apple Siri.",
   },
 ];
+
 function Homeautomation() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <section className="relative h-[100vh] overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         {/* Background Image */}
         <img
           src={heroImage}
@@ -94,59 +96,140 @@ function Homeautomation() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/20" />
 
         {/* Content */}
         <div className="relative z-10 flex h-full items-center">
-          <div className="mx-3 mt-16 max-w-7xl px-6">
-            <div className="max-w-3xl">
-              {/* <span className="inline-flex rounded border border-blue-400/30 bg-blue-500/20 px-5 py-2 text-sm font-semibold uppercase tracking-[4px] text-cyan-300">
-                Cillages One • Home Automation
-              </span> */}
+          <div className="mx-auto w-full max-w-7xl px-6">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
+              {/* Left Content */}
+              <div className="max-w-3xl">
+                <h1 className="mt-22 md:mt-6 text-4xl font-bold leading-tight text-white md:text-7xl">
+                  Experience the
+                  <br />
+                  <span className="text-cyan-400">Future of Smart Spaces</span>
+                </h1>
 
-              <h1 className="mt-6 text-4xl font-bold leading-tight text-white md:text-7xl">
-                Experience the
-                <br />
-                <span className="text-cyan-400">Future of Smart Spaces</span>
-              </h1>
+                <p className="mt-8 max-w-2xl text-sm sm:text-lg leading-8 text-gray-200 desc-font">
+                  Transform your home into an intelligent living space with
+                  Cillages One. Our integrated home automation solutions give
+                  you complete control over lighting, climate, security,
+                  entertainment, curtains, and appliances—all from a single
+                  touch panel, mobile app, or voice assistant.
+                </p>
 
-              <p className="mt-8 max-w-2xl text-sm sm:text-lg leading-8 text-gray-200">
-                Transform your home into an intelligent living space with
-                Cillages One. Our integrated home automation solutions give you
-                complete control over lighting, climate, security,
-                entertainment, curtains, and appliances—all from a single touch
-                panel, mobile app, or voice assistant.
-              </p>
+                {/* Stats */}
+                <div className="mt-4 sm:mt-16 grid grid-cols-2 gap-2 md:gap-8 sm:grid-cols-4">
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      100+
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">Smart Devices</p>
+                  </div>
 
-              {/* Stats */}
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      24/7
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">Remote Access</p>
+                  </div>
 
-              <div className="mt-10 sm:mt-16 grid grid-cols-2 gap-8 sm:grid-cols-4">
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">100+</h3>
-                  <p className="mt-2 text-sm text-gray-300">Smart Devices</p>
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      AI
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Intelligent Automation
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-3xl md:text-4xl font-bold text-cyan-400">
+                      Voice
+                    </h3>
+                    <p className="mt-2 text-sm text-gray-300">
+                      Assistant Ready
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">24/7</h3>
-                  <p className="mt-2 text-sm text-gray-300">Remote Access</p>
-                </div>
+              {/* Right Button */}
+              <div className="mt-4 lg:mt-10 lg:ml-10">
+                <button
+                  onClick={() => setOpen(true)}
+                  className="rounded-full border border-white/30 bg-cyan-400 backdrop-blur-md px-8 py-4 text-white font-semibold transition-all duration-300 hover:bg-white hover:text-black hover:scale-105 shadow-xl"
+                >
+                  My Project
+                </button>
+                {open && (
+                  <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4">
+                    <div className="relative w-full max-w-md rounded-3xl bg-white shadow-2xl overflow-hidden">
+                      {/* Header */}
+                      <div className="bg-gradient-to-r from-blue-700 to-blue-500 p-8 text-center">
+                        {/* <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl">
+                          📁
+                        </div> */}
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">AI</h3>
-                  <p className="mt-2 text-sm text-gray-300">
-                    Intelligent Automation
-                  </p>
-                </div>
+                        <h2 className="mt-4 text-3xl font-bold text-white">
+                          Project Portal
+                        </h2>
 
-                <div>
-                  <h3 className="text-4xl font-bold text-cyan-400">Voice</h3>
-                  <p className="mt-2 text-sm text-gray-300">Assistant Ready</p>
-                </div>
+                        <p className="mt-2 text-blue-100">
+                          Access your live project updates
+                        </p>
+                      </div>
+
+                      {/* Form */}
+                      <form className="space-y-5 p-8">
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project ID
+                          </label>
+
+                          <input
+                            type="text"
+                            placeholder="Enter Project ID"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="mb-2 block text-sm font-semibold text-gray-700">
+                            Project Password
+                          </label>
+
+                          <input
+                            type="password"
+                            placeholder="Enter Password"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                          />
+                        </div>
+
+                        <button
+                          type="submit"
+                          className="w-full rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700"
+                        >
+                          Login
+                        </button>
+                      </form>
+
+                      {/* Close */}
+                      <button
+                        onClick={() => setOpen(false)}
+                        className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section className="bg-white py-14">
         <div className="mx-auto max-w-7xl px-6">
           {/* Heading */}
@@ -158,7 +241,7 @@ function Homeautomation() {
               For Modern Living
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Cillages One transforms everyday living through intelligent home
               automation solutions that seamlessly integrate lighting, climate,
               entertainment, security, and smart appliances into one connected
@@ -184,7 +267,9 @@ function Homeautomation() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{item.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -199,7 +284,7 @@ function Homeautomation() {
               Built for Smart Living
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 desc-font">
               Powered by Cillages One and our technology partners, our
               intelligent product portfolio delivers reliable automation,
               seamless connectivity, and premium user experiences for modern
@@ -221,7 +306,9 @@ function Homeautomation() {
                   {item.title}
                 </h3>
 
-                <p className="mt-4 leading-7 text-gray-600">{item.desc}</p>
+                <p className="mt-4 leading-7 text-gray-600 desc-font">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -238,7 +325,7 @@ function Homeautomation() {
               Experience Smarter, Safer & More Comfortable Living
             </h2>
 
-            <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed desc-font">
               Home automation transforms the way you live by bringing
               convenience, security, energy efficiency, and complete control
               into one intelligent ecosystem.
@@ -282,7 +369,7 @@ function Homeautomation() {
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed desc-font">
                   {item.description}
                 </p>
               </div>
@@ -307,7 +394,7 @@ function Homeautomation() {
             With Intelligent Home Automation
           </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-cyan-100 desc-font">
             Whether you're building a new home or upgrading an existing one,
             Cillages One delivers intelligent automation solutions that enhance
             comfort, security, convenience, and energy efficiency—all controlled

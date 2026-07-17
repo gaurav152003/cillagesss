@@ -11,7 +11,7 @@ export default function ProjectCard({ project }) {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent transition-all duration-500 group-hover:from-black/90" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent transition-all duration-500 group-hover:from-black/90" />
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 z-10 w-full p-8">
@@ -48,7 +48,7 @@ export default function ProjectCard({ project }) {
             group-hover:mt-4
           "
         >
-          <p className="text-sm leading-6 text-gray-200">
+          <p className="text-sm leading-6 text-gray-200 desc-font">
             {project.description}
           </p>
 

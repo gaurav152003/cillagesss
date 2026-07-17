@@ -12,13 +12,13 @@ const leaders = [
     role: "Founder & Director",
     desc: `Graduate in Civil Engineering from VJTI, Mumbai, Mr. Shailendra Maliwar is a certified Project Management Professional (PMP) accredited by PMI, USA. He holds a postgraduate degree in Systems Management from NMIMS and a Master's in Marketing Management from Mumbai University. A certified Agile Project Manager and life member of the American Concrete Institute (ACI) and the Institution of Engineers, he brings over three decades of leadership and expertise in project management, engineering, and strategic business execution.`,
   },
-  {
-    image: PANKAJ,
-    name: "Mr. PANKAJ SHAH",
-    role: "Founder & Director",
-    desc: `A Renowned Name in Construction Industry in Mumbai , HE HAS BEEN AWARDED ACI AWARD, 2020, B.E. (Civil), MACI. (USA), MIE., MICI, MISSE, Chartered engineer, Structural Engineer, Licensed Surveyor, Past President of India Chapter of American Concrete Institute, USA.
-Mr. Pankaj Shah has been actively involved with “India Chapter of American Concrete Institute” for last 15 years as a Member in Board of Direction working for cause of Concrete and Civil Engineering in India. He is presently the “Past President of the “India Chapter of American Concrete Institute”. He also has an experience of over 38 years dedicated to the Civil Industry Handling projects ranging from Petroleum plants, Textile processing units, Effluent treatment, cement plants to Repairs and Restoration works in ooperative Societies, Industrial Units, Corporate buildings and Redevelopment of Housing Societies.`,
-  },
+  //   {
+  //     image: PANKAJ,
+  //     name: "Mr. PANKAJ SHAH",
+  //     role: "Founder & Director",
+  //     desc: `A Renowned Name in Construction Industry in Mumbai , HE HAS BEEN AWARDED ACI AWARD, 2020, B.E. (Civil), MACI. (USA), MIE., MICI, MISSE, Chartered engineer, Structural Engineer, Licensed Surveyor, Past President of India Chapter of American Concrete Institute, USA.
+  // Mr. Pankaj Shah has been actively involved with “India Chapter of American Concrete Institute” for last 15 years as a Member in Board of Direction working for cause of Concrete and Civil Engineering in India. He is presently the “Past President of the “India Chapter of American Concrete Institute”. He also has an experience of over 38 years dedicated to the Civil Industry Handling projects ranging from Petroleum plants, Textile processing units, Effluent treatment, cement plants to Repairs and Restoration works in ooperative Societies, Industrial Units, Corporate buildings and Redevelopment of Housing Societies.`,
+  //   },
   {
     image: singh,
     name: "Mr. J. D. Singh",
@@ -50,12 +50,12 @@ export default function Leadership() {
     <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto">
           <h2 className="mt-4 text-5xl font-bold text-gray-900">
             Meet Our Leadership
           </h2>
 
-          <p className="mt-6 text-gray-600 leading-8">
+          <p className="mt-6 text-gray-600 leading-8 desc-font">
             Experienced professionals driving innovation, sustainability, and
             excellence across every Cillages project.
           </p>
@@ -102,7 +102,7 @@ export default function Leadership() {
 
                   <div className="mt-8 h-1 w-20 rounded-full bg-blue-600"></div>
 
-                  <p className="mt-8 text-lg leading-8 text-gray-600">
+                  <p className="mt-8 text-lg leading-8 text-gray-600 desc-font">
                     {leader.desc}
                   </p>
                 </div>
