@@ -104,7 +104,7 @@ function Projects() {
                             required
                             type="password"
                             placeholder="Enter Password"
-                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-600"
+                            className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none transition focus:border-blue-500"
                           />
                         </div>
 
