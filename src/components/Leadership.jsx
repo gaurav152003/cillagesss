@@ -2,7 +2,7 @@ import PANKAJ from "../assets/team/pankaj.png";
 import singh from "../assets/team/jd.png";
 import mehta from "../assets/team/shailesh.png";
 import jyoti from "../assets/team/jyoti.jpeg";
-import jayesh from "../assets/team/jayesh.jpg";
+import jayesh from "../assets/team/jj.jpeg";
 import shailendra from "../assets/team/shailendra.jpg";
 
 const leaders = [

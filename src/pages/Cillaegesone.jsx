@@ -116,7 +116,7 @@ function Cillaegesone() {
               {/* View Presentation */}
 
               <a
-                href="/pdf/cillages.profile.2026.pdf"
+                href="/pdf/CillaegsOne-UCC.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="absolute bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-cyan-700"
@@ -211,7 +211,7 @@ function Cillaegesone() {
             </Link>
 
             <a
-              href="/pdf/cillages.profile.2026.pdf"
+              href="/pdf/CillaegsOne-UCC.pdf"
               download
               className="inline-flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-cyan-700"
             >

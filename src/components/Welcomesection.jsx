@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import video from "../assets/CillagesFinal.mp4";
+import video from "../assets/Cillagesone_Ucc_Demo.mp4";
 import dashboard from "../assets/ucc.png";
 export default function WelcomeSection() {
   return (
@@ -54,7 +54,7 @@ export default function WelcomeSection() {
             <div className="mt-10 flex gap-5">
               <button className="bg-blue-600 text-white px-7 py-3 rounded-full hover:bg-blue-700 transition">
                 <a
-                  href="/CillagesProfile.pptx"
+                  href="/cillages.profile.2026.pptx"
                   download="cillages.profile.2026.pptx"
                 >
                   Company Brochure

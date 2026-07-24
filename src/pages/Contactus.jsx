@@ -53,7 +53,7 @@ export default function Contact() {
 
       {/* ================= Contact ================= */}
 
-      <section className="bg-gray-50 py-24">
+      <section className="bg-gray-50 py-24" id="contact">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Left */}
@@ -157,6 +157,7 @@ export default function Contact() {
                 />
 
                 <input
+                  required
                   name="phone"
                   type="text"
                   placeholder="Phone Number"
@@ -172,21 +173,18 @@ export default function Contact() {
 
                 <select
                   name="service"
-                  required
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 >
                   <option value="">Select Service</option>
-                  <option>Cillages One - Smart Automation</option>
-                  <option>Client Representation</option>
+
                   <option>Development Solutions</option>
                   <option>Project Management Consultancy</option>
                   <option>Redevelopment Consultancy</option>
+                  <option>Cillages One - UCC For Projects</option>
                   <option>Cost Consultancy</option>
-                  <option>Home Automation</option>
+                  <option>Home Automation(Projects)</option>
                   <option>Office & Building Automation</option>
-                  <option>Networking Solutions</option>
-                  <option>Security Systems</option>
-                  <option>AI & Smart Infrastructure</option>
+                  <option>Hospitality Automation</option>
                   <option>Other</option>
                 </select>
 
@@ -194,7 +192,6 @@ export default function Contact() {
                   name="message"
                   rows="5"
                   placeholder="Tell us about your project..."
-                  required
                   className="w-full border border-gray-300 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
 
